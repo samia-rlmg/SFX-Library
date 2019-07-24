@@ -14,7 +14,7 @@ Processes updates for importing into Soundly
 
 2. Run the following command: 
 
-    `python ../Add-New-SFX/processNewSounds.py`
+    `python ../processNewSounds.py`
 
     This script will do three things: (a) convert any AIFF or CAF to WAV (preserving all channels of CAF files), (b) move the SFX files into RLMG-Local, and (c) update the metadata.txt file with the file’s name, description, and library (called “originator” in the metadata and Soundly).
 
