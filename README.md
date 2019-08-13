@@ -9,7 +9,7 @@ The shared database depends on two main pieces:
 
 No matter what happens to Soundly (updates, crashes, uninstalls, etc.), as long as you have these two pieces, you can reconstruct the database at any point.
 
-In case of problems, our contact at Soundly is Vegard Grubstad (vegard@getsoundly.com), who can help with both technical and business issues.
+In case of problems, our contact at Soundly is Vegard Grubstad (vegard@getsoundly.com), who can help with both technical and business issues. You can also reach Samia at sbouzid22@gmail.com.
 
 ## Adding New SFX to Soundly Library
 
@@ -41,3 +41,10 @@ You will have to choose the metadata.txt file again.
 4. Connect to the shared database you just created. (In Soundly, select "Database > Connect to shared network database.")
 
 5. The shared RLMG-Local library should appear in the menu at the top-left under “Network.” This process takes around an hour and a half.
+
+## Troubleshooting
+### The "Originator" field is empty
+Open metadata.txt. The last SFX you processed should be the last lines in the file. Check if these lines have an "Originator" field. **If NO**: You can delete these lines (always good to back up the file first) and re-run the process, taking care to follow the steps above. **If YES**: Scan the entries to see if there are any lines that look weird. Each line should have three entries separated by a tab. Missing or extra tabs or lines may cause errors.
+
+### Soundly gives an error saying there is a problem with the format of the metadata file.
+Each line in the metadata file should have three entries separated by a tab. If there is a missing or extra tab somewhere, or a missing or extra entry, the metadata file will be read incorrectly. You can either fix this manually or delete the problematic lines and rerun the whole process outlined above. 
