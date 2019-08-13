@@ -44,7 +44,7 @@ You will have to choose the metadata.txt file again.
 
 ## Troubleshooting
 ### The "Originator" field is empty
-Open metadata.txt. The last SFX you processed should be the last lines in the file. Check if these lines have an "Originator" field. **If NO**: You can delete these lines (always good to back up the file first) and re-run the process, taking care to follow the steps above. **If YES**: Scan the entries to see if there are any lines that look weird. Each line should have three entries separated by a tab. Missing or extra tabs or lines may cause errors.
+Open metadata.txt. The last SFX you processed should be the last lines in the file. (If they're not, rerun the script.) Check if these lines have an "Originator" field. **If NO**: You can delete these lines (always good to back up the file first) and re-run the process, taking care to follow the steps above. **If YES**: Scan the entries to see if there are any lines that look weird. Each line should have three entries separated by a tab. Missing or extra tabs or lines may cause errors.
 
 ### Soundly gives an error saying there is a problem with the format of the metadata file.
 Each line in the metadata file should have three entries separated by a tab. If there is a missing or extra tab somewhere, or a missing or extra entry, the metadata file will be read incorrectly. You can either fix this manually or delete the problematic lines and rerun the whole process outlined above. 
